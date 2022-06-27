@@ -1,0 +1,226 @@
+#Department Database
+
+CREATE TABLE IF NOT EXISTS `department` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `department` (`id`, `name`, `description`) VALUES
+	(1, 'IT', 'Information Technology'),
+	(2, 'TelComm', 'Telecommunication'),
+	(3, 'Ins', 'Insurance'),
+	(4, 'HR', 'Human Resources');
+	
+	
+#Employee Database
+
+CREATE TABLE IF NOT EXISTS `employee` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `dept_id` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `dept_id` (`dept_id`),
+  CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`dept_id`) REFERENCES `department` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `employee` (`id`, `name`, `email`, `address`, `dept_id`) VALUES
+	(1, 'Soumitra', 'soumitra@gmail.com', Ropar, 1),
+	(2, 'Suman', 'suman@gmail.com', Rail, 2),
+	(3, 'Avisek', 'avisek@gmail.com', Asron, 3);
+	
+	
+-----------------------------------------------------------------------------------------------------------	
+	                       # TESTING FOR DB ONLY
+
+#INNER JOIN
+SELECT d.name, e.name, e.email, e.address FROM department d INNER JOIN employee e ON d.id = e.dept_id;
+
+#LEFT JOIN or LEFT OUTER JOIN
+SELECT d.name, e.name, e.email, e.address FROM department d LEFT JOIN employee e ON d.id = e.dept_id;
+
+#RIGHT JOIN or RIGHT OUTER JOIN
+SELECT d.name, e.name, e.email, e.address FROM department d RIGHT JOIN employee e ON d.id = e.dept_id;
+
+#CROSS JOIN
+SELECT d.name, e.name, e.email, e.address FROM department d CROSS JOIN employee e;
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+#Testing the Application
+#POSTMAN URL HITS 
+#Left Join
+#URL:-
+http://localhost:8888/dept/employees/left
+
+#Response :-
+
+[
+    {
+        "empDept": "IT",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "TelComm",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "Ins",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "HR",
+        "empName": null,
+        "empEmail": null,
+        "empAddress": null
+    }
+]
+
+
+#Right Join
+#URL:-
+http://localhost:8888/dept/employees/right
+
+Response :-
+[
+    {
+        "empDept": "IT",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "TelComm",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "Ins",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    }
+]
+
+#Inner Join:-
+#URL :- 
+http://localhost:8080/dept/employees/inner
+
+Response :-
+
+[
+    {
+        "empDept": "IT",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "TelComm",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "Ins",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    }
+]
+
+#Cross Join
+#URL:- 
+http://localhost:8888/dept/employees/cross
+
+Response :-
+
+[
+    {
+        "empDept": "IT",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "IT",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "IT",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "TelComm",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "TelComm",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "TelComm",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "Ins",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "Ins",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "Ins",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "HR",
+        "empName": "Soumitra",
+        "empEmail": "soumitra@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "HR",
+        "empName": "Suman",
+        "empEmail": "suman@gmail.com",
+        "empAddress": null
+    },
+    {
+        "empDept": "HR",
+        "empName": "Avisek",
+        "empEmail": "avisek@gmail.com",
+        "empAddress": null
+    }
+]
+  
+	

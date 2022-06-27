@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringBootMultipleDataBaseDemo"/>
+<aop-project name="SpringBootWithUserCacheRestApiDemo"/>
+<aop-project name="SpringBootSecondLevelCacheRestApiDemo"/>
+<aop-project name="SpringBootHibernateDaoSupportDemo"/>
+<aop-project name="OneRepositroyAndMultipleEntityDemo"/>
+<aop-project name="SpringBootH2DataBaseDemo"/>
+<aop-project name="SpringBootWithMyBatisDemo"/>
+<aop-project name="SpringBootWithMongoClientDemo"/>
+<aop-project name="SpringBootConfigMultipleDataBaseDemo"/>
+<aop-project name="SpringBootRestApiDemo"/>
+<aop-project name="SpringBootAllJoinDemo"/>
+<aop-project name="SpringBootHibernateTemplateDemo"/>
+<aop-project name="SpringBootWithCSVFileJPABatchDemo"/>
+<aop-project name="MultipleEnityAndOneRepositoryDemo"/>
+<aop-project name="SpringBootJerseyRestWebServicesDemo"/>
+<aop-project name="SpringBootServletFilterAnnotationDemo"/>
+<aop-project name="SpringBootWithMongoMorphiaDemo"/>
+<aop-project name="SpringBootGetDataMultipleTableDemo"/>
+<aop-project name="SpringBootWithMongoTemplateDemo"/>
+<aop-project name="SpringBootDevelopmentProducationDemo"/>
+<aop-project name="SpringBootRedisCacheRestApiDemo"/>
+<aop-project name="SpringBootWithJspDemo"/>
+<aop-project name="SpringBootWithBatchDemo"/>
+<aop-project name="SpringBootWithMongoOperationDemo"/>
+<aop-project name="SpringBootWithRestApiDemo"/>
+<aop-project name="SpringBootWithJpaAndHibernateDemo"/>
+<aop-project name="SpringBootServletFilterDemo"/>
+<aop-project name="SpringBootWithEHcacheCacheRestApiDemo"/>
+<aop-project name="SpringBootRestApiWithJpaDtoDemo"/>
+<aop-project name="SpringBootModelMapperRestApiDemo"/>
+<aop-project name="SpringBootWithCacheRestApiDemo"/>
+<aop-project name="SpringBootWithJdbcTemplateDemo"/>
+<aop-project name="SpringBootWithMongoRepositoryDemo"/>
+<aop-project name="SpringBootDbRefAnnotationMappingDemo"/>
+<aop-project name="SpringBootMongodbMappingDemo"/>
+</aop-reference-model>

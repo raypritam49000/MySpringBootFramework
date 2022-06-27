@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.rest.api.services.StudentImpl&apos; to &apos;StudentServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;SpringBootWithEhcacheDemo&apos;&#x0D;&#x0A;- Original element: &apos;com.rest.api.services.StudentImpl&apos;&#x0D;&#x0A;- Renamed element: &apos;com.rest.api.services.StudentServiceImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StudentImpl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rest.api.services{StudentImpl.java[StudentImpl" matchStrategy="1" name="StudentServiceImpl" qualified="false" references="true" similarDeclarations="false" stamp="1648913912804" textual="false" version="1.0"/>
+</session>
