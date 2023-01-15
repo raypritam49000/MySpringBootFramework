@@ -1,0 +1,127 @@
+{"properties": [
+  {
+    "name": "spring.user.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.user.datasource.driver-class-name'"
+  },
+  {
+    "name": "spring.user.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.user.datasource.url'"
+  },
+  {
+    "name": "spring.user.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.user.datasource.username'"
+  },
+  {
+    "name": "spring.user.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.user.datasource.password'"
+  },
+  {
+    "name": "spring.employee.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.driver-class-name'"
+  },
+  {
+    "name": "spring.employee.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.url'"
+  },
+  {
+    "name": "spring.employee.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.username'"
+  },
+  {
+    "name": "spring.employee.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.password'"
+  },
+  {
+    "name": "spring.datasource.company.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.url'"
+  },
+  {
+    "name": "spring.datasource.company.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.username'"
+  },
+  {
+    "name": "spring.datasource.company.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.password'"
+  },
+  {
+    "name": "spring.datasource.company.platform",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.platform'"
+  },
+  {
+    "name": "spring.datasource.employee.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.employee.url'"
+  },
+  {
+    "name": "spring.datasource.employee.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.employee.username'"
+  },
+  {
+    "name": "spring.datasource.employee.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.employee.password'"
+  },
+  {
+    "name": "spring.datasource.employee.platform",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.employee.platform'"
+  },
+  {
+    "name": "spring.datasource.employee.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.employee.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.company.driver-class-Name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.company.driver-class-Name'"
+  },
+  {
+    "name": "spring.datasource.employee.driver-class-Name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.employee.driver-class-Name'"
+  }
+]}
